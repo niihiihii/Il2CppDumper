@@ -214,6 +214,10 @@ namespace Il2CppDumper
                                 fieldDefinition.CustomAttributes.Add(customAttribute);
                             }
                         }
+
+                        if (imageName == "Concentus.dll") {
+                            continue; //ignore Concentus.dll
+                        }
                     }
                     //method
                     var methodEnd = typeDef.methodStart + typeDef.method_count;
